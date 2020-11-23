@@ -18,6 +18,7 @@ const levelOrder = function(root) {
   while(queue.length) {
     // 二叉树当前层的节点数
     const currentLevelSize = queue.length
+    res.push([])
     // 遍历当前层节点并保存到数组中
     for (let i = 0; i < currentLevelSize; i++) {
       let node = queue.shift()
